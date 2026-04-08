@@ -1,3 +1,13 @@
+# Build
+/target
+
+# User data (not source)
+config/
+invoices/
+output/
+tmp/
+
+# Project docs and assets (private)
 CLAUDE.md
 .claude/
 goal/

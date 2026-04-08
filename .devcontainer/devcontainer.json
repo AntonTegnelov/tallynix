@@ -2,7 +2,7 @@
   "name": "tallynix",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {},
-  "postCreateCommand": "",
+  "postCreateCommand": "sudo apt-get update -qq && sudo apt-get install -y -qq pkg-config libssl-dev && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && . $HOME/.cargo/env && cargo install --locked typst-cli",
   "customizations": {
     "vscode": {
       "extensions": []
